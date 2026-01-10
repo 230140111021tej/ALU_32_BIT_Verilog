@@ -1,7 +1,7 @@
 # 🚀 32-bit ALU (Arithmetic Logic Unit) in Verilog HDL
 
-![ALU Block Diagram](images/alu32.jpg)
-*ALU Block Diagram*
+![Figure 1: ALU Block Diagram](images/alu32.jpg)  
+*Figure 1: ALU Block Diagram*
 
 ---
 
@@ -21,8 +21,8 @@
 - **8-bit ALU**  
   [YouTube Demo](https://youtube.com/shorts/nqqnMJH8ioI?si=xn8rYsjJDMGVIPD3)
 
-  ---
-  
+---
+
 ## About
 
 This project implements a modular **32-bit ALU** in Verilog HDL, supporting 32 unique operations.  
@@ -36,18 +36,18 @@ It demonstrates practical digital design skills, modular code structure, and sim
 
 ## Features
 
-- **Arithmetic:** Addition, Subtraction, Multiplication (full 64-bit result), Division, Increment, Decrement, Two's/One's Complement
-- **Logical/Bitwise:** AND, OR, NAND, NOR, XOR, XNOR, Logical ops, Shifts
-- **Comparison:** Greater-than, Equality
-- **Code Conversion:** Binary ↔ Gray, Gray ↔ Binary
-- **Utilities:** Bit reversal, Parity checks, Reset
+- **Arithmetic:** Addition, Subtraction, Multiplication (full 64-bit result), Division, Increment, Decrement, Two's/One's Complement  
+- **Logical/Bitwise:** AND, OR, NAND, NOR, XOR, XNOR, Shifts  
+- **Comparison:** Greater-than, Equality  
+- **Code Conversion:** Binary ↔ Gray, Gray ↔ Binary  
+- **Utilities:** Bit reversal, Parity checks, Reset  
 
 ---
 
 ## Architecture
 
-- **Main ALU Code:** [`main_alu_code`](main_alu_code)
-- **Testbench:** [`alu_tb`](alu_tb)
+- **Main ALU Code:** [`main_alu_code.v`](main_alu_code.v)
+- **Testbench:** [`alu_tb.v`](alu_tb.v)
 
 Each function is implemented as a separate, synthesizable module for clarity and scalability.
 
@@ -55,24 +55,34 @@ Each function is implemented as a separate, synthesizable module for clarity and
 
 ## Simulation & Waveforms
 
-**RTL Schematic Example:**  
+**Figure 2: RTL Schematic**  
 ![RTL Schematic](images/alu_rtl.jpg)
 
-**Xilinx ISim Simulation:**  
+&nbsp;
+
+**Figure 3: Xilinx ISim Simulation**  
 ![Xilinx Simulation](images/alu_xilinx_wave.jpg)
 
-**GTKWave Output:**  
+&nbsp;
+
+**Figure 4: GTKWave Output**  
 ![GTKWave Output](images/gtkwave_alu32.png)
 
-**Icarus Verilog Testbench Output:**  
+&nbsp;
+
+**Figure 5: Icarus Verilog Testbench Output**  
 ![Icarus Verilog Output](images/iverilog_output.png)
+
+&nbsp;
+
+*All images above validate correct ALU operation and waveform activity for all ops.*
 
 ---
 
 ## References
 
-- [`main_alu_code`](main_alu_code) — All ALU operations and modules
-- [`alu_tb`](alu_tb) — Testbench for automated simulation and waveform dump
+- [`main_alu_code.v`](main_alu_code.v) — All ALU operations and modules  
+- [`alu_tb.v`](alu_tb.v) — Testbench for automated simulation and waveform dump  
 - **Academic Courses:**
   - [NPTEL: Digital Design (EE180)](https://onlinecourses.nptel.ac.in/noc25_ee180/preview)
   - [NPTEL: VLSI Design (CS155)](https://onlinecourses.nptel.ac.in/noc25_cs155/preview)
@@ -87,36 +97,27 @@ Each function is implemented as a separate, synthesizable module for clarity and
 
 1. **Clone the Repository**
     ```sh
-    git clone https://github.com/yourusername/alu32.git
-    cd alu32
+    git clone https://github.com/yourusername/ALU_32_BIT.git
+    cd ALU_32_BIT
     ```
 
-2. **Compile & Simulate**
+2. **Compile & Simulate (with Icarus Verilog)**
     ```sh
-    iverilog -o [testbench_name.vvp] [testbench_name.v]
-    vvp [testbench_name.vvp]
+    iverilog -o alu32_out alu_tb.v main_alu_code.v
+    vvp alu32_out
     ```
 
 3. **View Waveforms**
     ```sh
     gtkwave alu32.vcd
     ```
+    *(make sure your testbench generates the file `alu32.vcd`; change if different)*
 
 ---
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
-
-```
-MIT License
-
-Copyright (c) 2025 Tejas R Mallah
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
-```
+Licensed under the [MIT License](LICENSE).
 
 ---
 
@@ -124,6 +125,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 - **LinkedIn:** [Tejas R Mallah](https://www.linkedin.com/posts/tejas-r-mallah-28052b283_verilog-fpga-digitaldesign-activity-7364343834392113152-s981?utm_source=share&utm_medium=member_desktop&rcm=ACoAAET0mcABoSmVvowkUz7qcSZkG2bhRVZnDQ4)
 - **Email:** tejasmallah@gmail.com
+
+---
 
 ## Join the Conversation!
 
@@ -137,3 +140,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ---
 
+**With these changes, your repo and README will look professional and be ready for both academic and recruiter screening!**  
+Let me know if you want further tweaks or have more projects.
