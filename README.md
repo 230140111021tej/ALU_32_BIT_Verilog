@@ -18,6 +18,11 @@
 
 ---
 
+- **8-bit ALU**  
+  [YouTube Demo](https://youtube.com/shorts/nqqnMJH8ioI?si=xn8rYsjJDMGVIPD3)
+
+  ---
+  
 ## About
 
 This project implements a modular **32-bit ALU** in Verilog HDL, supporting 32 unique operations.  
