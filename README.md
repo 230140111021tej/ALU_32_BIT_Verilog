@@ -26,7 +26,7 @@
 ## About
 
 This project implements a modular **32-bit ALU** in Verilog HDL, supporting 32 unique operations.  
-It demonstrates practical digital design skills, modular code structure, and simulation proficiency—ideal for recruiters seeking candidates for **FPGA**, **VLSI**, or **hardware design roles**.
+It demonstrates practical digital design skills, modular code structure, and simulation proficiency—demonstrates practical digital design skills relevant to FPGA and VLSI roles for **FPGA**, **VLSI**, or **hardware design roles**.
 
 - **Inputs:** Two 32-bit operands
 - **Outputs:** 32-bit result, Carry flag, High/Low outputs for multiplication
